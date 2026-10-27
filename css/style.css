@@ -326,8 +326,8 @@ button, input, select { font: inherit; color: inherit; }
 .trend { font-size: .78rem; padding: 1px 8px; border-radius: 6px; background: rgba(217, 242, 126, .12); color: var(--lime); }
 
 @media (min-width: 960px) {
-  .flow { padding-block: 0; }
-  .flow-grid { grid-template-columns: 1.1fr .9fr; gap: var(--s-8); min-height: 100vh; padding-block: calc(var(--header-h) + var(--s-6)) var(--s-7); }
+  .flow { padding-block: var(--s-10); }
+  .flow-grid { grid-template-columns: 1.1fr .9fr; gap: var(--s-8); }
 }
 
 /* ---------- AI replies ---------- */

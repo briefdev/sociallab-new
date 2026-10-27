@@ -130,43 +130,20 @@
     const fmt = (v) => Math.round(v).toLocaleString('en-US');
     stepsList.classList.add('steps-live');
     const setStep = (n) => steps.forEach((s, i) => s.classList.toggle('on', i < n));
-    setStep(1);
 
-    const mm = gsap.matchMedia();
+    // Plays once on arrival (no pinning, no scroll scrub): steps light up in order
+    const stepsTl = gsap.timeline({ paused: true });
+    steps.forEach((s, i) => stepsTl.call(() => setStep(i + 1), null, i * .45));
+    ScrollTrigger.create({ trigger: '.steps', start: 'top 80%', once: true, onEnter: () => stepsTl.play() });
 
-    // Desktop: pin the section and let scroll drive the scenario
-    mm.add('(min-width: 960px) and (min-height: 700px)', () => {
-      drawable(chartLine);
-      drawable(chartTip);
-      gsap.set(chartArea, { autoAlpha: 0 });
-      counter.textContent = '0';
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: '.flow', start: 'top top', end: '+=1400', scrub: .6, pin: true,
-          onUpdate: (self) => {
-            setStep(Math.min(4, Math.floor(self.progress * 4) + 1));
-            counter.textContent = fmt(target * gsap.utils.clamp(0, 1, (self.progress - .5) / .45));
-          },
-        },
-      });
-      tl.to(chartLine, { strokeDashoffset: 0, autoAlpha: 1, duration: 1, ease: 'none' })
-        .to(chartArea, { autoAlpha: 1, duration: .3 }, .55)
-        .to(chartTip, { strokeDashoffset: 0, autoAlpha: 1, duration: .15 }, .9);
-      return () => { setStep(1); counter.textContent = fmt(target); };
-    });
-
-    // Mobile: no pinning, each step lights up as it scrolls in
-    mm.add('(max-width: 959px), (max-height: 699px)', () => {
-      const triggers = steps.map((s, i) => ScrollTrigger.create({
-        trigger: s, start: 'top 80%', onEnter: () => setStep(Math.max(i + 1, 1)),
-      }));
-      const tl = gsap.timeline({ scrollTrigger: { trigger: '.chart-card', start: 'top 75%', once: true } });
-      tl.add(draw(chartLine, { duration: 1.2 }))
-        .add(draw(chartTip, { duration: .3 }), '-=.1')
-        .from(chartArea, { autoAlpha: 0, duration: .4 }, .5)
-        .fromTo({ v: 0 }, { v: 0 }, { v: target, duration: 1.2, ease: 'power2.out', onUpdate() { counter.textContent = fmt(this.targets()[0].v); } }, 0);
-      return () => triggers.forEach((t) => t.kill());
-    });
+    // ...and the recovered-sales line draws while the total counts up
+    const sales = { v: 0 };
+    counter.textContent = '0';
+    const chartTl = gsap.timeline({ scrollTrigger: { trigger: '.chart-card', start: 'top 80%', once: true } });
+    chartTl.add(draw(chartLine, { duration: 1.4 }))
+      .add(draw(chartTip, { duration: .3 }), '-=.1')
+      .from(chartArea, { autoAlpha: 0, duration: .5 }, .6)
+      .to(sales, { v: target, duration: 1.4, ease: 'power2.out', onUpdate: () => { counter.textContent = fmt(sales.v); } }, 0);
 
     /* Stats: count up once when they scroll in (suffix in <small> is kept) */
     $$('.stat b[data-count]').forEach((b) => {
