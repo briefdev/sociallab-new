@@ -329,7 +329,7 @@ def home():
         <p class="eyebrow mono">التطبيق</p>
         <h2 class="h3">سوشل لاب على جوالك</h2>
         <p class="body">تابع محادثاتك من أي مكان، وخلّ عملاءك يراسلون متجرك من التطبيق.</p>
-        {store_badges()}
+        {store_badges('')}
       </div>
       <div class="duo-card duo-price">
         <p class="eyebrow mono">الباقات</p>
