@@ -3,26 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>سوشل لاب | صندوق وارد واحد لكل رسائل متجرك</title>
-  <meta name="description" content="سوشل لاب يجمع رسائل واتساب وانستقرام وتيك توك في صندوق وارد واحد، يرد على عملائك بالذكاء الاصطناعي، ويسترجع السلات المتروكة من سلة وزد وشوبيفاي تلقائياً.">
+  <title>سوشل لاب | أتمتة ذكية تبيع بدلاً عنك</title>
+  <meta name="description" content="روبوت ذكاء اصطناعي يرد على عملائك، يذكّرهم بعروضك، ويرجّع السلات المتروكة تلقائياً على واتساب. صندوق رسائل موحد لواتساب وإنستقرام وتيك توك وX.">
   <meta name="theme-color" content="#0C221C">
   <meta name="color-scheme" content="dark">
-
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ar_SA">
   <meta property="og:site_name" content="سوشل لاب">
-  <meta property="og:title" content="سوشل لاب | صندوق وارد واحد لكل رسائل متجرك">
-  <meta property="og:description" content="ردود فورية بالذكاء الاصطناعي، واسترجاع تلقائي للسلات المتروكة، وحملات واتساب — لأصحاب المتاجر في السعودية.">
+  <meta property="og:title" content="سوشل لاب | أتمتة ذكية تبيع بدلاً عنك">
+  <meta property="og:description" content="روبوت ذكاء اصطناعي يرد على عملائك، يذكّرهم بعروضك، ويرجّع السلات المتروكة تلقائياً على واتساب. صندوق رسائل موحد لواتساب وإنستقرام وتيك توك وX.">
   <meta property="og:image" content="assets/img/mark.png">
-
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <link rel="apple-touch-icon" href="assets/img/favicon.png">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alexandria:wght@500;700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="css/style.css">
-
   <!-- Analytics: add GTM (GTM-5ZHL5MGD) here when ready -->
 </head>
 <body>
@@ -42,18 +38,88 @@
 
 <header class="site-header" id="top">
   <div class="wrap header-in">
-    <a class="brand" href="#top" aria-label="سوشل لاب — الرئيسية">
+    <a class="brand" href="index.html" aria-label="سوشل لاب — الرئيسية">
       <img src="assets/img/logo-light.png" alt="سوشل لاب" width="768" height="207">
     </a>
     <nav class="nav" aria-label="التنقل الرئيسي">
-      <a href="#flow">السلات المتروكة</a>
-      <a href="#ai">الرد الآلي</a>
-      <a href="#features">المنصة</a>
-      <a href="#integrations">الربط</a>
-      <a href="#plans">الباقات</a>
-      <a href="#faq">الأسئلة</a>
+      <div class="dd">
+        <button class="dd-btn" type="button" aria-expanded="false" aria-controls="dd-platform">المنصة <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="dd-panel" id="dd-platform" hidden>
+          <div class="dd-grid">
+            <a class="dd-item" href="features/inbox.html">
+              <span class="dd-ic"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 13h5l2 3h4l2-3h5"/><path d="M5.5 5h13l2.5 8v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-6z"/></svg></span>
+              <span><strong>صندوق الوارد الموحد</strong><small>كل القنوات في شاشة واحدة</small></span>
+            </a>
+            <a class="dd-item" href="features/whatsapp.html">
+              <span class="dd-ic"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19.3z"/><path d="M9 10c.5 2 2 3.5 4 4l1.2-1.2 2 1-.6 1.6c-3.4.2-7-3.4-6.8-6.8L10.4 8l1 2z"/></svg></span>
+              <span><strong>واتساب أعمال API</strong><small>رقم واحد لكل فريقك وقوالب غنية</small></span>
+            </a>
+            <a class="dd-item" href="features/automation.html">
+              <span class="dd-ic"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="6" height="5" rx="1"/><rect x="14" y="16" width="6" height="5" rx="1"/><rect x="4" y="16" width="6" height="5" rx="1"/><path d="M7 8v8M7 12h8a2 2 0 0 1 2 2v2"/></svg></span>
+              <span><strong>الأتمتة وشجرة الردود</strong><small>ردود تلقائية خلال ثانية</small></span>
+            </a>
+            <a class="dd-item" href="features/ai-agent.html">
+              <span class="dd-ic"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.8 4.7 4.7 1.8-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8z"/><path d="M19 15l.8 2.2 2.2.8-2.2.8L19 21l-.8-2.2-2.2-.8 2.2-.8z"/></svg></span>
+              <span><strong>وكيل الذكاء الاصطناعي</strong><small>يرد خلال 15 ثانية ويفهم العميل</small></span>
+            </a>
+            <a class="dd-item" href="features/campaigns.html">
+              <span class="dd-ic"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10v4h3l7 4V6l-7 4z"/><path d="M16.5 9a4 4 0 0 1 0 6M19 6.5a8 8 0 0 1 0 11"/></svg></span>
+              <span><strong>الحملات وإدارة العملاء</strong><small>تذكير بالعروض واسترجاع السلات</small></span>
+            </a>
+            <a class="dd-item" href="features/call-center.html">
+              <span class="dd-ic"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><path d="M4 14h3v5H5a1 1 0 0 1-1-1zM20 14h-3v5h2a1 1 0 0 0 1-1z"/><path d="M17 19c0 1.5-1.5 2-3 2h-2"/></svg></span>
+              <span><strong>مركز الاتصال</strong><small>وكيل مكالمات ذكي للطلبات والسلات</small></span>
+            </a>
+            <a class="dd-item" href="features/tickets.html">
+              <span class="dd-ic"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v4a2 2 0 0 0 0 4v4H4v-4a2 2 0 0 0 0-4z"/><path d="M14 6v12" stroke-dasharray="2 2"/></svg></span>
+              <span><strong>التذاكر والمهام</strong><small>متابعة الطلبات وأداء الفريق</small></span>
+            </a>
+            <a class="dd-item" href="features/orders.html">
+              <span class="dd-ic"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg></span>
+              <span><strong>إدارة الطلبات</strong><small>منتجاتك وطلباتك ومدفوعاتك</small></span>
+            </a>
+            <a class="dd-item" href="features/app.html">
+              <span class="dd-ic"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M11 18.5h2"/></svg></span>
+              <span><strong>التطبيق</strong><small>سوشل لاب على جوالك</small></span>
+            </a>
+          </div>
+          <a class="dd-foot" href="integrations.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3v5M15 3v5M6 8h12v3a6 6 0 0 1-12 0zM12 17v4"/></svg> يتصل بكل أدواتك: 18 تكاملاً مع متجرك وأنظمتك <svg class="i i-dir" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg></a>
+        </div>
+      </div>
+      <a href="integrations.html">التكاملات</a>
+      <a href="case-studies.html">دراسات الحالة</a>
+      <a href="pricing.html">الباقات</a>
+      <a href="faq.html">الأسئلة</a>
     </nav>
-    <a class="btn btn-lime btn-sm" href="#demo">اطلب عرضاً توضيحياً</a>
+    <div class="header-actions">
+      <a class="login" href="https://sociallab.sa/authentication/login">دخول</a>
+      <a class="btn btn-lime btn-sm" href="demo.html">جرّب على متجرك</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mnav" aria-label="فتح القائمة"><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="mnav" id="mnav" hidden>
+    <div class="wrap">
+      <p class="mnav-label mono">المنصة</p>
+      <div class="mnav-features">
+        <a href="features/inbox.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 13h5l2 3h4l2-3h5"/><path d="M5.5 5h13l2.5 8v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-6z"/></svg>صندوق الوارد الموحد</a>
+        <a href="features/whatsapp.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19.3z"/><path d="M9 10c.5 2 2 3.5 4 4l1.2-1.2 2 1-.6 1.6c-3.4.2-7-3.4-6.8-6.8L10.4 8l1 2z"/></svg>واتساب أعمال API</a>
+        <a href="features/automation.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="6" height="5" rx="1"/><rect x="14" y="16" width="6" height="5" rx="1"/><rect x="4" y="16" width="6" height="5" rx="1"/><path d="M7 8v8M7 12h8a2 2 0 0 1 2 2v2"/></svg>الأتمتة وشجرة الردود</a>
+        <a href="features/ai-agent.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.8 4.7 4.7 1.8-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8z"/><path d="M19 15l.8 2.2 2.2.8-2.2.8L19 21l-.8-2.2-2.2-.8 2.2-.8z"/></svg>وكيل الذكاء الاصطناعي</a>
+        <a href="features/campaigns.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10v4h3l7 4V6l-7 4z"/><path d="M16.5 9a4 4 0 0 1 0 6M19 6.5a8 8 0 0 1 0 11"/></svg>الحملات وإدارة العملاء</a>
+        <a href="features/call-center.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><path d="M4 14h3v5H5a1 1 0 0 1-1-1zM20 14h-3v5h2a1 1 0 0 0 1-1z"/><path d="M17 19c0 1.5-1.5 2-3 2h-2"/></svg>مركز الاتصال</a>
+        <a href="features/tickets.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v4a2 2 0 0 0 0 4v4H4v-4a2 2 0 0 0 0-4z"/><path d="M14 6v12" stroke-dasharray="2 2"/></svg>التذاكر والمهام</a>
+        <a href="features/orders.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg>إدارة الطلبات</a>
+        <a href="features/app.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M11 18.5h2"/></svg>التطبيق</a>
+      </div>
+      <div class="mnav-links">
+        <a href="integrations.html">التكاملات</a>
+        <a href="case-studies.html">دراسات الحالة</a>
+        <a href="pricing.html">الباقات</a>
+        <a href="faq.html">الأسئلة الشائعة</a>
+        <a href="https://sociallab.sa/authentication/login">تسجيل الدخول</a>
+      </div>
+      <a class="btn btn-lime btn-block" href="demo.html">جرّب سوشل لاب على متجرك</a>
+    </div>
   </div>
 </header>
 
@@ -65,48 +131,42 @@
       <path class="draw" d="M-20 610 C 220 560, 430 380, 520 70" fill="none" stroke="url(#swoosh-fade)" stroke-width="34" stroke-linecap="round"/>
       <path class="draw draw-late" d="M455 120 L520 52 L585 170" fill="none" stroke="#D9F27E" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
-
     <div class="wrap hero-grid">
       <div class="hero-copy">
-        <p class="eyebrow mono">واتساب · انستقرام · تيك توك — في صندوق واحد</p>
+        <p class="eyebrow mono">واتساب · إنستقرام · تيك توك · X — في صندوق واحد</p>
         <h1 id="hero-title" class="hero-title">
-          <span class="line">عميلك سأل.</span>
-          <span class="line">متجرك ردّ.</span>
-          <span class="line hl">والطلب اكتمل.</span>
+          <span class="line">أتمتة ذكية</span>
+          <span class="line hl">تبيع بدلاً عنك.</span>
         </h1>
-        <p class="lead">سوشل لاب يجمع رسائل عملائك من كل القنوات في مكان واحد، يرد عليهم بالذكاء الاصطناعي، ويسترجع السلات المتروكة تلقائياً — حتى وأنت نائم.</p>
+        <p class="lead">روبوت ذكاء اصطناعي يرد على عملائك، يذكّر عملاءك بعروضك، ويرجّع السلات المتروكة، تلقائياً على واتساب.</p>
+        <ul class="hero-chips">
+          <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>ردود فورية</li>
+          <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>استرجاع السلة</li>
+          <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>تذكير بالعروض</li>
+        </ul>
         <div class="hero-actions">
-          <a class="btn btn-lime" href="#demo">
-            اطلب عرضاً توضيحياً
-            <svg class="i i-dir" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg>
-          </a>
-          <a class="link-arrow" href="#flow">شاهد كيف يعمل</a>
+          <a class="btn btn-lime" href="https://sociallab.sa/authentication/side-register">ابدأ مجاناً <svg class="i i-dir" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg></a>
+          <a class="link-arrow" href="demo.html">جرّب على متجرك</a>
         </div>
-        <p class="works-with"><span class="mono">يعمل مع</span> سلة <i>·</i> زد <i>·</i> شوبيفاي</p>
+        <p class="works-with">بدون بطاقة ائتمان <i>•</i> إعداد في 10 دقائق</p>
       </div>
 
       <div class="phone-stage">
-        <div class="phone" role="img" aria-label="مثال: عميل يسأل عبر واتساب عن مقاس عباية، والرد الآلي يجيب وينشئ الطلب">
+        <div class="phone" role="img" aria-label="مثال: عميل يسأل عبر واتساب عن منتج، والرد الآلي يجيب وينشئ الطلب">
           <div class="phone-top">
             <img src="assets/img/mark.png" alt="" width="36" height="36">
-            <div>
-              <strong>متجرك</strong>
-              <span class="status"><b class="dot"></b> يرد تلقائياً</span>
-            </div>
+            <div><strong>متجرك</strong><span class="status"><b class="dot"></b> يرد تلقائياً</span></div>
             <span class="chip mono">واتساب</span>
           </div>
           <div class="chat" aria-hidden="true">
             <p class="day mono">اليوم</p>
             <div class="msg in" data-step="1">السلام عليكم، العباية السوداء مقاس M متوفرة؟<time class="mono">02:14</time></div>
             <div class="typing" data-step="2"><span></span><span></span><span></span></div>
-            <div class="msg out" data-step="3"><em class="ai-tag mono">رد آلي</em>وعليكم السلام! متوفرة، وسعرها 289 ر.س. أضيفها لسلتك؟<time class="mono">02:14</time></div>
+            <div class="msg out" data-step="3"><em class="ai-tag mono">رد آلي</em>وعليكم السلام! متوفرة. أضيفها لسلتك؟<time class="mono">02:14</time></div>
             <div class="msg in" data-step="4">إيه أكيد<time class="mono">02:15</time></div>
             <div class="order-card" data-step="5">
-              <span class="ok"><svg class="i" viewBox="0 0 24 24"><path d="m5 12 5 5 9-10"/></svg></span>
-              <div>
-                <strong>تم إنشاء الطلب <span class="mono">#10482</span></strong>
-                <span>العباية السوداء · M · <b class="mono">289</b> ر.س</span>
-              </div>
+              <span class="ok"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg></span>
+              <div><strong>تم إنشاء الطلب <span class="mono">#10482</span></strong><span>العباية السوداء · M</span></div>
             </div>
           </div>
           <div class="composer" aria-hidden="true"><span>اكتب رسالة…</span><b></b></div>
@@ -115,16 +175,28 @@
     </div>
   </section>
 
+  <section class="stats-band" aria-label="سوشل لاب بالأرقام">
+    <div class="wrap stats">
+        <div class="stat"><b class="mono" dir="ltr"><span class="pre">+</span><span data-count="350">350</span><small></small></b><span>منشأة تجارية تثق بسوشل لاب</span></div>
+        <div class="stat"><b class="mono" dir="ltr"><span class="pre"><</span><span data-count="12">12</span><small>ث</small></b><span>يرد على العميل</span></div>
+        <div class="stat"><b class="mono" dir="ltr"><span class="pre">+</span><span data-count="30">30</span><small>%</small></b><span>زيادة في المبيعات</span></div>
+        <div class="stat"><b class="mono" dir="ltr"><span class="pre"></span><span data-count="35">35</span><small>%</small></b><span>سلات تم استرجاعها</span></div>
+    </div>
+  </section>
+
   <!-- CHANNELS -->
   <section class="channels" aria-label="القنوات المدعومة">
     <div class="wrap channels-in">
-      <p class="mono label">القنوات المدعومة</p>
+      <p class="mono label">صندوق رسائل موحد</p>
       <ul>
-        <li><span class="mono">01</span> واتساب API الرسمي</li>
-        <li><span class="mono">02</span> واتساب برقم عادي</li>
-        <li><span class="mono">03</span> انستقرام</li>
+        <li><span class="mono">01</span> واتساب</li>
+        <li><span class="mono">02</span> إنستقرام</li>
+        <li><span class="mono">03</span> ماسنجر</li>
         <li><span class="mono">04</span> تيك توك</li>
-        <li><span class="mono">05</span> سناب شات</li>
+        <li><span class="mono">05</span> X</li>
+        <li><span class="mono">06</span> تيليجرام</li>
+        <li><span class="mono">07</span> البريد</li>
+        <li><span class="mono">08</span> مراجعات قوقل</li>
       </ul>
     </div>
   </section>
@@ -139,325 +211,245 @@
         <li>لم يرد أحد.</li>
         <li>في الصباح، كان قد اشترى من متجر آخر.</li>
       </ol>
-      <p class="story-turn">مع سوشل لاب، <span>كل رسالة لها رد</span> — في ثوانٍ، وفي أي ساعة.</p>
+      <p class="story-turn">مع سوشل لاب، <span>عميلك يلقى رداً خلال أقل من 12 ثانية</span> — في أي ساعة.</p>
     </div>
   </section>
 
-  <!-- ABANDONED CART FLOW (pinned on desktop) -->
+  <!-- PLATFORM INDEX -->
+  <section class="platform" id="platform" aria-labelledby="platform-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="platform-title" class="h2">أدوات تبيع وترد عنك. <span>كل أداة مصممة لتوفير وقتك وزيادة إيراداتك.</span></h2>
+      </div>
+      <ol class="feature-rows">
+        <li><a href="features/inbox.html">
+          <span class="row-n mono">01</span>
+          <span class="row-ic"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 13h5l2 3h4l2-3h5"/><path d="M5.5 5h13l2.5 8v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-6z"/></svg></span>
+          <strong>صندوق الوارد الموحد</strong>
+          <span class="row-d">كل القنوات في شاشة واحدة</span>
+          <svg class="i i-dir" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg>
+        </a></li>
+        <li><a href="features/whatsapp.html">
+          <span class="row-n mono">02</span>
+          <span class="row-ic"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19.3z"/><path d="M9 10c.5 2 2 3.5 4 4l1.2-1.2 2 1-.6 1.6c-3.4.2-7-3.4-6.8-6.8L10.4 8l1 2z"/></svg></span>
+          <strong>واتساب أعمال API</strong>
+          <span class="row-d">رقم واحد لكل فريقك وقوالب غنية</span>
+          <svg class="i i-dir" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg>
+        </a></li>
+        <li><a href="features/automation.html">
+          <span class="row-n mono">03</span>
+          <span class="row-ic"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="6" height="5" rx="1"/><rect x="14" y="16" width="6" height="5" rx="1"/><rect x="4" y="16" width="6" height="5" rx="1"/><path d="M7 8v8M7 12h8a2 2 0 0 1 2 2v2"/></svg></span>
+          <strong>الأتمتة وشجرة الردود</strong>
+          <span class="row-d">ردود تلقائية خلال ثانية</span>
+          <svg class="i i-dir" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg>
+        </a></li>
+        <li><a href="features/ai-agent.html">
+          <span class="row-n mono">04</span>
+          <span class="row-ic"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.8 4.7 4.7 1.8-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8z"/><path d="M19 15l.8 2.2 2.2.8-2.2.8L19 21l-.8-2.2-2.2-.8 2.2-.8z"/></svg></span>
+          <strong>وكيل الذكاء الاصطناعي</strong>
+          <span class="row-d">يرد خلال 15 ثانية ويفهم العميل</span>
+          <svg class="i i-dir" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg>
+        </a></li>
+        <li><a href="features/campaigns.html">
+          <span class="row-n mono">05</span>
+          <span class="row-ic"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10v4h3l7 4V6l-7 4z"/><path d="M16.5 9a4 4 0 0 1 0 6M19 6.5a8 8 0 0 1 0 11"/></svg></span>
+          <strong>الحملات وإدارة العملاء</strong>
+          <span class="row-d">تذكير بالعروض واسترجاع السلات</span>
+          <svg class="i i-dir" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg>
+        </a></li>
+        <li><a href="features/call-center.html">
+          <span class="row-n mono">06</span>
+          <span class="row-ic"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><path d="M4 14h3v5H5a1 1 0 0 1-1-1zM20 14h-3v5h2a1 1 0 0 0 1-1z"/><path d="M17 19c0 1.5-1.5 2-3 2h-2"/></svg></span>
+          <strong>مركز الاتصال</strong>
+          <span class="row-d">وكيل مكالمات ذكي للطلبات والسلات</span>
+          <svg class="i i-dir" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg>
+        </a></li>
+        <li><a href="features/tickets.html">
+          <span class="row-n mono">07</span>
+          <span class="row-ic"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v4a2 2 0 0 0 0 4v4H4v-4a2 2 0 0 0 0-4z"/><path d="M14 6v12" stroke-dasharray="2 2"/></svg></span>
+          <strong>التذاكر والمهام</strong>
+          <span class="row-d">متابعة الطلبات وأداء الفريق</span>
+          <svg class="i i-dir" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg>
+        </a></li>
+        <li><a href="features/orders.html">
+          <span class="row-n mono">08</span>
+          <span class="row-ic"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg></span>
+          <strong>إدارة الطلبات</strong>
+          <span class="row-d">منتجاتك وطلباتك ومدفوعاتك</span>
+          <svg class="i i-dir" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg>
+        </a></li>
+        <li><a href="features/app.html">
+          <span class="row-n mono">09</span>
+          <span class="row-ic"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M11 18.5h2"/></svg></span>
+          <strong>التطبيق</strong>
+          <span class="row-d">سوشل لاب على جوالك</span>
+          <svg class="i i-dir" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg>
+        </a></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ABANDONED-CART FLOW -->
   <section class="flow" id="flow" aria-labelledby="flow-title">
     <div class="wrap flow-grid">
       <div class="flow-copy">
         <p class="eyebrow mono">استرجاع السلات المتروكة</p>
         <h2 id="flow-title" class="h2">السلة المتروكة ليست خسارة. <span>هي رسالة لم تُرسل بعد.</span></h2>
-        <p class="body">اربط متجرك على سلة أو زد أو شوبيفاي، وسوشل لاب يتابع كل سلة متروكة ويرسل للعميل في الوقت المناسب — بدون أي تدخل منك.</p>
-
+        <p class="body">اربط متجرك على سلة أو زد، وسوشل لاب يتابع كل سلة متروكة ويذكّر العميل تلقائياً على واتساب.</p>
         <ol class="steps">
-          <li class="step" data-i="0">
-            <span class="step-ic"><svg class="i" viewBox="0 0 24 24"><path d="M3 4h2l2.4 11.2a1 1 0 0 0 1 .8h9.2a1 1 0 0 0 1-.8L20 8H6"/><circle cx="9" cy="20" r="1.2"/><circle cx="17" cy="20" r="1.2"/></svg></span>
-            <div><strong>سلة متروكة</strong><span>عميل أضاف منتجين وخرج من المتجر</span></div>
-            <em class="mono">14:02</em>
-          </li>
-          <li class="step" data-i="1">
-            <span class="step-ic"><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></span>
-            <div><strong>انتظار 3 ساعات</strong><span>المدة تضبطها أنت حسب سلوك عملائك</span></div>
-            <em class="mono" dir="ltr">+3h</em>
-          </li>
-          <li class="step" data-i="2">
-            <span class="step-ic"><svg class="i" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></svg></span>
-            <div><strong>رسالة واتساب + كود خصم 10%</strong><span>من قالب معتمد رسمياً من واتساب</span></div>
-            <em class="mono">17:02</em>
-          </li>
-          <li class="step step-win" data-i="3">
-            <span class="step-ic"><svg class="i" viewBox="0 0 24 24"><path d="m5 12 5 5 9-10"/></svg></span>
-            <div><strong>العميل أكمل الطلب</strong><span>والمبلغ رجع لمبيعاتك</span></div>
-            <em class="mono" dir="ltr">+412</em>
-          </li>
+          <li class="step"><span class="step-ic"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg></span><div><strong>سلة متروكة</strong><span>تصل من متجرك على سلة أو زد</span></div><em class="mono">14:02</em></li>
+          <li class="step"><span class="step-ic"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19.3z"/><path d="M9 10c.5 2 2 3.5 4 4l1.2-1.2 2 1-.6 1.6c-3.4.2-7-3.4-6.8-6.8L10.4 8l1 2z"/></svg></span><div><strong>تذكير تلقائي على واتساب</strong><span>رسالة تذكّر العميل بسلته</span></div><em class="mono">واتساب</em></li>
+          <li class="step"><span class="step-ic"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><path d="M4 14h3v5H5a1 1 0 0 1-1-1zM20 14h-3v5h2a1 1 0 0 0 1-1z"/><path d="M17 19c0 1.5-1.5 2-3 2h-2"/></svg></span><div><strong>وكيل المكالمات يتصل</strong><span>وكيل المكالمات الذكي في باقة الأعمال</span></div><em class="mono">اتصال</em></li>
+          <li class="step step-win"><span class="step-ic"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg></span><div><strong>العميل أكمل الطلب</strong><span>والمبيعات رجعت لمتجرك</span></div><em class="mono">✓</em></li>
         </ol>
       </div>
-
       <div class="flow-chart">
         <div class="chart-card">
-          <div class="chart-head">
-            <span>مبيعات مسترجعة هذا الشهر</span>
-            <span class="trend mono" dir="ltr">+18%</span>
-          </div>
-          <p class="chart-num"><b class="mono" data-count="48920">48,920</b> ر.س</p>
+          <div class="chart-head"><span>سلات تم استرجاعها</span></div>
+          <p class="chart-num"><b class="mono"><span data-count="35">35</span>%</b></p>
           <svg class="chart" viewBox="0 0 400 220" aria-hidden="true">
-            <g class="grid-lines">
-              <line x1="0" y1="55" x2="400" y2="55"/><line x1="0" y1="110" x2="400" y2="110"/><line x1="0" y1="165" x2="400" y2="165"/>
-            </g>
+            <g class="grid-lines"><line x1="0" y1="55" x2="400" y2="55"/><line x1="0" y1="110" x2="400" y2="110"/><line x1="0" y1="165" x2="400" y2="165"/></g>
             <path class="chart-area" d="M0 215 C 150 200, 280 140, 352 24 L 400 24 L 400 220 L 0 220 Z"/>
             <path class="draw chart-line" d="M0 215 C 150 200, 280 140, 352 24" fill="none" stroke="url(#swoosh-fade)" stroke-width="7" stroke-linecap="round"/>
             <path class="draw chart-head-arrow" d="M330 34 L353 20 L372 46" fill="none" stroke="#D9F27E" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-          <div class="chart-foot mono"><span dir="rtl">الأسبوع 1</span><span>2</span><span>3</span><span dir="rtl">الأسبوع 4</span></div>
+          <a class="link-arrow" href="features/campaigns.html">الحملات واسترجاع السلات</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- AI REPLIES -->
+  <!-- AI AGENT -->
   <section class="ai" id="ai" aria-labelledby="ai-title">
     <div class="wrap ai-grid">
       <div class="ai-copy">
-        <p class="eyebrow mono">الرد الآلي بالذكاء الاصطناعي</p>
-        <h2 id="ai-title" class="h2">ردود تعرف متجرك <span>كما تعرفه أنت.</span></h2>
+        <p class="eyebrow mono">وكيل الذكاء الاصطناعي</p>
+        <h2 id="ai-title" class="h2">يرد خلال 15 ثانية. <span>ويزيد مبيعاتك حتى 30%.</span></h2>
         <ul class="ticks">
-          <li>يتعلم من كتالوج منتجاتك وسياسات الشحن والاسترجاع.</li>
-          <li>يرد بأسلوب متجرك، رسمياً كان أو ودوداً.</li>
-          <li>يحوّل المحادثة لفريقك فوراً عندما يحتاج العميل شخصاً.</li>
+          <li>يفهم العميل.</li>
+          <li>يحلل المحادثة.</li>
+          <li>يتفاعل حسب الاشتراك.</li>
         </ul>
+        <a class="link-arrow" href="features/ai-agent.html">تعرّف على وكيل الذكاء الاصطناعي</a>
       </div>
-
       <div class="ai-demo">
-        <div class="ai-window">
-          <div class="ai-bar">
-            <span class="chip mono">انستقرام</span>
-            <span class="muted">محادثة جديدة</span>
-          </div>
-          <div class="msg in">كم يوم يوصل الطلب للرياض؟ وأقدر أرجعه لو المقاس ما ضبط؟</div>
-          <div class="msg out wide">
-            <em class="ai-tag mono">رد آلي</em>
-            يوصل خلال 1–2 يوم عمل داخل الرياض. والاسترجاع متاح خلال 7 أيام من الاستلام، والمنتج بحالته الأصلية.
-            <span class="sources"><span class="mono">المصدر:</span> <b>سياسة الشحن</b> <b>سياسة الاسترجاع</b></span>
-          </div>
-          <div class="msg in">طيب أبي أكلم أحد عن طلب جملة</div>
-          <p class="handoff mono">
-            <svg class="i" viewBox="0 0 24 24"><path d="M16 4h4v4M20 4l-7 7M10 6H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-5"/></svg>
-            تم تحويل المحادثة إلى فريق المبيعات
-          </p>
-        </div>
-      </div>
+        <div class="mock mock-ai" role="img" aria-label="مثال: وكيل الذكاء الاصطناعي يرد على سؤال عميل">
+          <div class="mock-bar"><span class="chip mono">إنستقرام</span><span class="muted">محادثة جديدة</span></div>
+          <div class="msg in">كم يوم يوصل الطلب للرياض؟</div>
+          <div class="msg out"><em class="ai-tag mono">وكيل الذكاء الاصطناعي · 15 ث</em>يوصل خلال 1–2 يوم عمل داخل الرياض. تحب أرسل لك رابط المنتج؟</div>
+          <div class="msg in">إيه لو سمحت</div>
+          <p class="tags-row"><span class="mono">وسوم مقترحة:</span> <b>مهتم بالشراء</b> <b>الرياض</b></p>
+        </div></div>
     </div>
   </section>
 
-  <!-- PLATFORM BENTO -->
-  <section class="features" id="features" aria-labelledby="features-title">
+  <!-- CASE STUDIES -->
+  <section class="cases" aria-labelledby="cases-title">
     <div class="wrap">
-      <h2 id="features-title" class="h2 features-title">كل ما يحتاجه فريقك، <span>في شاشة واحدة.</span></h2>
-
-      <div class="bento">
-        <article class="tile tile-inbox">
-          <header><h3>صندوق وارد موحّد</h3><p>كل المحادثات من كل القنوات، مع الموظف المسؤول عن كل واحدة.</p></header>
-          <ul class="inbox" aria-label="مثال على صندوق الوارد">
-            <li class="unread"><span class="av">ع</span><div><strong>عميل جديد</strong><span>هل يتوفر شحن لجدة؟</span></div><em class="tag mono">واتساب</em><b class="count mono">2</b></li>
-            <li><span class="av">ر</span><div><strong>عميل عائد</strong><span>شكراً، وصل الطلب</span></div><em class="tag mono">انستقرام</em></li>
-            <li class="unread"><span class="av">م</span><div><strong>استفسار منتج</strong><span>عندكم اللون البيج؟</span></div><em class="tag mono">تيك توك</em><b class="count mono">1</b></li>
-            <li><span class="av">ف</span><div><strong>طلب استرجاع</strong><span>محوّلة إلى: خدمة العملاء</span></div><em class="tag mono">واتساب</em></li>
-          </ul>
-        </article>
-
-        <article class="tile tile-campaign">
-          <header><h3>حملات واتساب مجدولة</h3><p>اختر الشريحة، اكتب الرسالة، وحدّد الموعد.</p></header>
-          <dl class="camp">
-            <div><dt>الحملة</dt><dd>عرض نهاية الشهر</dd></div>
-            <div><dt>الشريحة</dt><dd>اشتروا خلال 90 يوماً · <span class="mono">1,240</span></dd></div>
-            <div><dt>الموعد</dt><dd>الخميس · <span class="mono">20:00</span></dd></div>
-          </dl>
-          <div class="progress" aria-hidden="true"><span></span></div>
-        </article>
-
-        <article class="tile tile-reports">
-          <header><h3>تقارير تكشف الصورة</h3><p>عدد الرسائل، معدلات الرد، ورضا العملاء.</p></header>
-          <div class="bars" aria-hidden="true">
-            <span style="--h:.38"></span><span style="--h:.52"></span><span style="--h:.44"></span><span style="--h:.66"></span><span style="--h:.6"></span><span style="--h:.82"></span><span style="--h:.95"></span>
-          </div>
-        </article>
-
-        <article class="tile tile-team">
-          <header><h3>توزيع تلقائي</h3><p>كل محادثة تصل للموظف المناسب حسب القناة أو الموضوع.</p></header>
-          <p class="rule mono"><span>إذا</span> الموضوع = استرجاع <span>←</span> خدمة العملاء</p>
-        </article>
+      <div class="section-head">
+        <h2 id="cases-title" class="h2">تجار تحقق نتائج حقيقية. <span>من متاجر أزياء لسلاسل مطاعم، سوشل لاب يعمل لكل نوع عمل.</span></h2>
+        <a class="link-arrow" href="case-studies.html">كل دراسات الحالة</a>
       </div>
-
-      <!-- Default figures: replace with real numbers before launch -->
-      <div class="stats">
-        <div class="stat"><b class="mono" dir="ltr" data-count="500" data-prefix="+">+500</b><span>متجر نشط يدير رسائله من سوشل لاب</span></div>
-        <div class="stat"><b class="mono" data-count="78">78<small>%</small></b><span>من الرسائل يرد عليها الرد الآلي بدون موظف</span></div>
-        <div class="stat"><b class="mono" data-count="12">12<small>ث</small></b><span>متوسط زمن الرد على العميل</span></div>
+      <article class="case-feature">
+        <div>
+          <p class="case-sector mono">حل المتاجر المتعددة</p>
+          <h3>إدارة 12 متجراً من لوحة واحدة</h3>
+          <p class="body">تاجر إلكتروني يدير 12 متجراً متخصصاً ربطها كلها بسوشل لاب. الآن ذكاء اصطناعي واحد يرد على عملاء كل المتاجر، ويرسل التذكيرات، ويحلل الأداء، من شاشة واحدة.</p>
+        </div>
+        <div class="case-metrics">
+<div><b class="mono" dir="ltr">12</b><span>متجر تحت إدارة واحدة</span></div>
+<div><b class="mono" dir="ltr">+180%</b><span>زيادة إجمالية في المبيعات</span></div>
+<div><b class="mono" dir="ltr">70%</b><span>توفير في وقت فريق الدعم</span></div>
+        </div>
+      </article>
+      <div class="case-grid">
+        <article class="case-card">
+          <p class="case-sector mono">متاجر الأزياء</p>
+          <h3>متجر لييلا</h3>
+          <p class="case-num"><b class="mono" dir="ltr">+240%</b><span>مبيعات خلال 3 أشهر</span></p>
+          <blockquote>«استرجعنا العديد من السلات المتروكة بدون جهد يدوي»</blockquote>
+        </article>
+        <article class="case-card">
+          <p class="case-sector mono">سلاسل المطاعم</p>
+          <h3>مطاعم الرياض</h3>
+          <p class="case-num"><b class="mono" dir="ltr">98%</b><span>رضا العملاء</span></p>
+          <blockquote>«مع الرد الفوري 24 ساعة تغيرت تجربة عملائنا كلياً»</blockquote>
+        </article>
+        <article class="case-card">
+          <p class="case-sector mono">الإلكترونيات</p>
+          <h3>سوق التقنية</h3>
+          <p class="case-num"><b class="mono" dir="ltr">3x</b><span>معدل التحويل</span></p>
+          <blockquote>«التذكيرات الآلية ضاعفت مبيعات الجمعة البيضاء ثلاث مرات»</blockquote>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- INTEGRATIONS: hub -->
-  <section class="integrations" id="integrations" aria-labelledby="int-title">
+  <!-- INTEGRATIONS -->
+  <section class="integrations" aria-labelledby="int-title">
     <div class="wrap int-grid">
       <div class="int-copy">
-        <p class="eyebrow mono">الربط</p>
-        <h2 id="int-title" class="h2">اربط متجرك <span>في دقائق.</span></h2>
-        <p class="body">الطلبات والعملاء والسلات المتروكة تصل لسوشل لاب لحظة حدوثها. وواتساب يرتبط بطريقتين: مسح QR للرقم العادي، أو API الرسمي للأعمال.</p>
+        <p class="eyebrow mono">التكاملات</p>
+        <h2 id="int-title" class="h2">يتصل بكل <span>أدواتك.</span></h2>
+        <p class="body">متجرك أو CRM أو قنوات التواصل، كلها تعمل مع سوشل لاب بدون تعقيد.</p>
+        <a class="link-arrow" href="integrations.html">كل التكاملات (18)</a>
       </div>
-      <div class="hub" aria-label="المنصات المرتبطة: سلة، زد، شوبيفاي، زوهو">
+      <div class="hub hub-8" aria-label="من التكاملات: سلة، زد، شوبيفاي، WooCommerce، Odoo، Zoho، HubSpot، n8n">
         <svg class="hub-lines" viewBox="0 0 400 400" aria-hidden="true">
-          <path d="M200 200 L 72 78"/><path d="M200 200 L 328 78"/><path d="M200 200 L 72 322"/><path d="M200 200 L 328 322"/>
+          <path d="M200 200 L200 40"/><path d="M200 200 L313 87"/><path d="M200 200 L360 200"/><path d="M200 200 L313 313"/>
+          <path d="M200 200 L200 360"/><path d="M200 200 L87 313"/><path d="M200 200 L40 200"/><path d="M200 200 L87 87"/>
         </svg>
         <div class="hub-core"><img src="assets/img/mark.png" alt="" width="64" height="64"></div>
-        <span class="node n1">سلة</span>
-        <span class="node n2">زد</span>
-        <span class="node n3">شوبيفاي</span>
-        <span class="node n4">زوهو</span>
+        <span class="node" style="left:50%;top:10%">سلة</span>
+        <span class="node" style="left:78%;top:22%">زد</span>
+        <span class="node" style="left:88%;top:50%">Shopify</span>
+        <span class="node" style="left:78%;top:78%">WooCommerce</span>
+        <span class="node" style="left:50%;top:90%">Odoo</span>
+        <span class="node" style="left:22%;top:78%">Zoho</span>
+        <span class="node" style="left:12%;top:50%">HubSpot</span>
+        <span class="node" style="left:22%;top:22%">n8n</span>
       </div>
     </div>
   </section>
 
-  <!-- PLANS: rising steps along the arrow. Prices are default figures, replace before launch -->
-  <section class="plans" id="plans" aria-labelledby="plans-title">
+  <!-- APP + PRICING TEASER -->
+  <section class="duo" aria-label="التطبيق والباقات">
+    <div class="wrap duo-grid">
+      <div class="duo-card">
+        <p class="eyebrow mono">التطبيق</p>
+        <h2 class="h3">سوشل لاب على جوالك</h2>
+        <p class="body">تابع محادثاتك من أي مكان، وخلّ عملاءك يراسلون متجرك من التطبيق.</p>
+        <div class="store-badges">
+        <a class="store-badge" href="https://apps.apple.com/sa/app/social-lab-grow-your-business/id6745023855" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg><span><small>حمّله من</small>App Store</span></a>
+        <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.social.lab.app" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.609 1.814 13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893 2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.198 2.807 1.626a1 1 0 0 1 0 1.73l-2.808 1.626L15.206 12l2.492-2.491zM5.864 2.658 16.802 8.99l-2.303 2.303-8.635-8.635z"/></svg><span><small>احصل عليه من</small>Google Play</span></a>
+      </div>
+      </div>
+      <div class="duo-card duo-price">
+        <p class="eyebrow mono">الباقات</p>
+        <h2 class="h3">باقات لكل مرحلة من مراحل النمو</h2>
+        <p class="from"><span>ابدأ من</span><b class="mono">0</b><span>ر.س — المنصة كاملة، مجاناً للأبد.</span></p>
+        <a class="link-arrow" href="pricing.html">قارن الباقات</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Closing CTA inside the logo bubble -->
+  <section class="cta-band" aria-labelledby="cta-title">
     <div class="wrap">
-      <div class="plans-head">
-        <h2 id="plans-title" class="h2">باقة تكبر <span>مع متجرك.</span></h2>
-        <div class="plans-side">
-          <p class="body">ابدأ بالباقة التعريفية، وانتقل للأعلى متى احتجت. بدون عقود طويلة.</p>
-          <div class="billing" role="group" aria-label="مدة الاشتراك">
-            <button type="button" class="on" aria-pressed="true" data-billing="monthly">شهري</button>
-            <button type="button" aria-pressed="false" data-billing="yearly">سنوي <em>وفّر 20%</em></button>
-          </div>
-        </div>
-      </div>
-      <div class="stairs">
-        <svg class="stairs-line" viewBox="0 0 1000 300" preserveAspectRatio="none" aria-hidden="true">
-          <path class="draw" d="M0 290 C 380 270, 720 200, 960 20" fill="none" stroke="url(#swoosh-fade)" stroke-width="6" stroke-linecap="round"/>
-        </svg>
-        <ol>
-          <li class="plan">
-            <span class="mono">01</span>
-            <h3>التعريفية</h3>
-            <p class="plan-desc">جرّب المنصة على متجرك قبل أن تقرر.</p>
-            <p class="price"><b class="mono">0</b><span>ر.س<br>لمدة 14 يوماً</span></p>
-            <a class="btn btn-line btn-block" href="https://sociallab.sa/authentication/side-register">ابدأ مجاناً</a>
-            <ul class="feats">
-              <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>رقم واتساب واحد (QR)</li>
-              <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>مستخدم واحد</li>
-              <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>200 محادثة</li>
-              <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>رد آلي بالكلمات المفتاحية</li>
-              <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>تقارير أساسية</li>
-            </ul>
-          </li>
-          <li class="plan">
-            <span class="mono">02</span>
-            <h3>البداية</h3>
-            <p class="plan-desc">لمتجر يبدأ بتنظيم رسائله وردوده.</p>
-            <p class="price"><b class="mono" data-monthly="149" data-yearly="119">149</b><span>ر.س<br><em data-period>شهرياً</em></span></p>
-            <a class="btn btn-line btn-block" href="#demo" data-plan="البداية">اطلب عرضاً توضيحياً</a>
-            <ul class="feats">
-              <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>واتساب + انستقرام</li>
-              <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>3 مستخدمين</li>
-              <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>2,000 محادثة شهرياً</li>
-              <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>استرجاع السلات المتروكة</li>
-              <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>ربط سلة وزد وشوبيفاي</li>
-            </ul>
-          </li>
-          <li class="plan plan-pick">
-            <p class="badge">الأنسب لمعظم المتاجر</p>
-            <span class="mono">03</span>
-            <h3>النمو</h3>
-            <p class="plan-desc">للمتاجر التي تعتمد على الحملات واسترجاع السلات.</p>
-            <p class="price"><b class="mono" data-monthly="299" data-yearly="239">299</b><span>ر.س<br><em data-period>شهرياً</em></span></p>
-            <a class="btn btn-lime btn-block" href="#demo" data-plan="النمو">اطلب عرضاً توضيحياً</a>
-            <ul class="feats">
-              <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>كل ما في البداية + تيك توك وسناب شات</li>
-              <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>6 مستخدمين</li>
-              <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>6,000 محادثة شهرياً</li>
-              <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>رد آلي بالذكاء الاصطناعي</li>
-              <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>حملات واتساب مجدولة</li>
-              <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>توزيع تلقائي للمحادثات</li>
-            </ul>
-          </li>
-          <li class="plan">
-            <span class="mono">04</span>
-            <h3>الأعمال</h3>
-            <p class="plan-desc">لفرق أكبر وقنوات أكثر واحتياج مخصص.</p>
-            <p class="price"><b class="mono" data-monthly="599" data-yearly="479">599</b><span>ر.س<br><em data-period>شهرياً</em></span></p>
-            <a class="btn btn-line btn-block" href="#demo" data-plan="الأعمال">اطلب عرضاً توضيحياً</a>
-            <ul class="feats">
-              <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>كل ما في النمو + واتساب API الرسمي</li>
-              <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>15 مستخدماً</li>
-              <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>محادثات غير محدودة</li>
-              <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>تقارير متقدمة وتصدير</li>
-              <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>ربط زوهو + API للمطورين</li>
-              <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>مدير حساب مخصص</li>
-            </ul>
-          </li>
-        </ol>
-      </div>
-      <p class="plans-note">الأسعار لا تشمل ضريبة القيمة المضافة. رسوم محادثات واتساب API الرسمية تُحتسب حسب استهلاكك.</p>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq" aria-labelledby="faq-title">
-    <div class="wrap faq-grid">
-      <h2 id="faq-title" class="h2">أسئلة <span>تتكرر.</span></h2>
-      <div class="faq-list">
-        <details>
-          <summary>ما هو سوشل لاب؟</summary>
-          <p>منصة تجمع كل قنوات التواصل مع عملائك — واتساب وانستقرام وتيك توك وسناب شات — في مكان واحد. تدير منها المحادثات والحملات، وترد آلياً بالذكاء الاصطناعي، وتسترجع السلات المتروكة من متجرك.</p>
-        </details>
-        <details>
-          <summary>هل يناسب المتاجر الصغيرة؟</summary>
-          <p>نعم. سوشل لاب مصمم للجميع، من المتجر الذي بدأ للتو إلى المؤسسات الكبيرة، والباقات تتدرج حسب حجمك.</p>
-        </details>
-        <details>
-          <summary>هل يعمل مع سلة وزد؟</summary>
-          <p>نعم، ويعمل أيضاً مع شوبيفاي. بعد الربط تصل الطلبات والعملاء والسلات المتروكة إلى سوشل لاب تلقائياً.</p>
-        </details>
-        <details>
-          <summary>كيف أربط رقم واتساب؟</summary>
-          <p>بطريقتين: مسح رمز QR لربط رقمك الحالي، أو الربط عبر واتساب API الرسمي المناسب للأعمال الأكبر والحملات.</p>
-        </details>
-        <details>
-          <summary>هل أستطيع متابعة تقارير الأداء؟</summary>
-          <p>نعم. لوحات وتقارير تفاعلية تعرض عدد الرسائل ومعدلات الرد ومستوى رضا العملاء.</p>
-        </details>
-        <details>
-          <summary>هل توجد نسخة تجريبية؟</summary>
-          <p>نعم، تستطيع تجربة الميزات قبل الاشتراك في باقة مدفوعة. اطلب عرضاً توضيحياً ونفعّلها لك على متجرك.</p>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <!-- DEMO FORM inside the logo bubble -->
-  <section class="demo" id="demo" aria-labelledby="demo-title">
-    <div class="wrap">
-      <div class="bubble">
+      <div class="bubble bubble-cta">
         <svg class="bubble-arrow" viewBox="0 0 300 300" aria-hidden="true">
           <path class="draw" d="M0 300 C 110 270, 200 190, 238 52" fill="none" stroke="#D9F27E" stroke-width="16" stroke-linecap="round"/>
           <path class="draw draw-late" d="M205 78 L240 40 L276 108" fill="none" stroke="#D9F27E" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
-        <div class="demo-copy">
-          <h2 id="demo-title" class="h2">شاهد سوشل لاب <span>يعمل على متجرك.</span></h2>
-          <p class="body">عرض توضيحي مع فريقنا على بيانات متجرك أنت: نربط القنوات، ونريك الرد الآلي واسترجاع السلات على أرض الواقع.</p>
+        <div>
+          <h2 id="cta-title" class="h2">جاهز تزيد <span>مبيعاتك؟</span></h2>
+          <p class="body">سوشل لاب يعمل عنك. احجز جلستك المجانية الآن ونبني لك النظام خطوة بخطوة.</p>
         </div>
-        <form class="demo-form" id="demo-form" novalidate>
-          <div class="field">
-            <label for="f-name">الاسم</label>
-            <input id="f-name" name="name" type="text" autocomplete="name" required>
-          </div>
-          <div class="field">
-            <label for="f-store">اسم المتجر</label>
-            <input id="f-store" name="store" type="text" required>
-          </div>
-          <div class="field">
-            <label for="f-platform">منصة المتجر</label>
-            <select id="f-platform" name="platform">
-              <option>سلة</option>
-              <option>زد</option>
-              <option>شوبيفاي</option>
-              <option>أخرى</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="f-phone">رقم الجوال</label>
-            <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="05XXXXXXXX" dir="ltr" required>
-          </div>
-          <input type="hidden" name="plan" id="f-plan" value="">
-          <p class="form-error" id="form-error" role="alert" hidden>أكمل الاسم واسم المتجر ورقم الجوال.</p>
-          <button class="btn btn-lime btn-block" type="submit">
-            أرسل الطلب عبر واتساب
-            <svg class="i i-dir" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg>
-          </button>
-          <p class="form-note">سيفتح واتساب برسالة جاهزة فيها بياناتك، وترسلها أنت.</p>
-        </form>
+        <div class="cta-actions">
+          <a class="btn btn-lime" href="https://calendly.com/getsociallab/getsociallab" target="_blank" rel="noopener">احجز جلسة مجانية <svg class="i i-dir" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg></a>
+          <a class="btn btn-line" href="demo.html">جرّب على متجرك</a>
+          <p class="cta-note">بدون بطاقة ائتمان • إعداد في 10 دقائق</p>
+        </div>
       </div>
     </div>
   </section>
@@ -465,45 +457,63 @@
 </main>
 
 <footer class="site-footer">
-  <div class="wrap footer-in">
-    <div class="footer-brand">
-      <img src="assets/img/logo-light.png" alt="سوشل لاب" width="768" height="207" loading="lazy">
-      <p>منصة متكاملة لإدارة التواصل مع العملاء عبر واتساب وانستقرام وتيك توك.</p>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="assets/img/logo-light.png" alt="سوشل لاب" width="768" height="207" loading="lazy">
+        <p>منصة متكاملة لإدارة التواصل مع العملاء عبر واتساب وإنستقرام وتيك توك.</p>
+        <div class="store-badges">
+        <a class="store-badge" href="https://apps.apple.com/sa/app/social-lab-grow-your-business/id6745023855" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg><span><small>حمّله من</small>App Store</span></a>
+        <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.social.lab.app" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.609 1.814 13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893 2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.198 2.807 1.626a1 1 0 0 1 0 1.73l-2.808 1.626L15.206 12l2.492-2.491zM5.864 2.658 16.802 8.99l-2.303 2.303-8.635-8.635z"/></svg><span><small>احصل عليه من</small>Google Play</span></a>
+      </div>
+      </div>
+      <nav class="footer-col" aria-label="المنصة">
+        <p class="footer-h">المنصة</p>
+        <a href="features/inbox.html">صندوق الوارد الموحد</a>
+        <a href="features/whatsapp.html">واتساب أعمال API</a>
+        <a href="features/automation.html">الأتمتة وشجرة الردود</a>
+        <a href="features/ai-agent.html">وكيل الذكاء الاصطناعي</a>
+        <a href="features/campaigns.html">الحملات وإدارة العملاء</a>
+        <a href="features/call-center.html">مركز الاتصال</a>
+        <a href="features/tickets.html">التذاكر والمهام</a>
+        <a href="features/orders.html">إدارة الطلبات</a>
+        <a href="features/app.html">التطبيق</a>
+      </nav>
+      <nav class="footer-col" aria-label="روابط">
+        <p class="footer-h">سوشل لاب</p>
+        <a href="integrations.html">التكاملات</a>
+        <a href="case-studies.html">دراسات الحالة</a>
+        <a href="pricing.html">الباقات والأسعار</a>
+        <a href="demo.html">جرّب على متجرك</a>
+        <a href="faq.html">الأسئلة الشائعة</a>
+        <a href="https://sociallab.sa/help">مركز المعرفة</a>
+        <a href="https://blog.sociallab.sa/">المدونة</a>
+        <a href="https://s.sociallab.sa/landing.html">انضم إلى شركاء وسفراء سوشل لاب</a>
+      </nav>
+      <div class="footer-col">
+        <p class="footer-h">تواصل معنا</p>
+        <a href="https://wa.me/966530901484" target="_blank" rel="noopener">واتساب: <span class="mono" dir="ltr">+966 53 090 1484</span></a>
+        <a href="https://calendly.com/getsociallab/getsociallab" target="_blank" rel="noopener">احجز جلسة مجانية</a>
+        <a href="https://whatsapp.com/channel/0029VbBZ3Oa8F2pIwcq7J43s" target="_blank" rel="noopener">انضم إلى مجتمعنا</a>
+        <nav class="footer-social" aria-label="حساباتنا على وسائل التواصل">
+      <a href="https://www.instagram.com/Getsociallab" target="_blank" rel="noopener" aria-label="انستقرام"><svg viewBox="0 0 24 24" aria-hidden="true" class="ic-stroke"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".9" class="dot-fill"/></svg></a>
+      <a href="https://www.tiktok.com/@getsocial.lab" target="_blank" rel="noopener" aria-label="تيك توك"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
+      <a href="https://x.com/Getsociallab" target="_blank" rel="noopener" aria-label="إكس"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg></a>
+      <a href="https://www.linkedin.com/company/sociallabsa/" target="_blank" rel="noopener" aria-label="لينكدإن"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.064 2.064 0 1 1 0-4.128 2.064 2.064 0 0 1 0 4.128zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+      <a href="https://www.youtube.com/@getsociallab" target="_blank" rel="noopener" aria-label="يوتيوب"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+        </nav>
+      </div>
     </div>
-    <nav class="footer-links" aria-label="روابط الموقع">
-      <a href="#flow">السلات المتروكة</a>
-      <a href="#ai">الرد الآلي</a>
-      <a href="#integrations">الربط</a>
-      <a href="#plans">الباقات</a>
-      <a href="#faq">الأسئلة الشائعة</a>
-      <a href="https://sociallab.sa/authentication/login">تسجيل الدخول</a>
-      <a href="https://blog.sociallab.sa/">المدونة</a>
-      <a href="https://sociallab.sa/privacy">الخصوصية</a>
-      <a href="https://sociallab.sa/terms">الشروط والأحكام</a>
-    </nav>
-    <nav class="footer-social" aria-label="حساباتنا على وسائل التواصل">
-      <a href="https://www.instagram.com/Getsociallab" target="_blank" rel="noopener" aria-label="انستقرام">
-        <svg viewBox="0 0 24 24" aria-hidden="true" class="ic-stroke"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".9" class="dot-fill"/></svg>
-      </a>
-      <a href="https://www.tiktok.com/@getsocial.lab" target="_blank" rel="noopener" aria-label="تيك توك">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
-      </a>
-      <a href="https://x.com/Getsociallab" target="_blank" rel="noopener" aria-label="إكس">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
-      </a>
-      <a href="https://www.linkedin.com/company/sociallabsa/" target="_blank" rel="noopener" aria-label="لينكدإن">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.064 2.064 0 1 1 0-4.128 2.064 2.064 0 0 1 0 4.128zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-      </a>
-      <a href="https://www.youtube.com/@getsociallab" target="_blank" rel="noopener" aria-label="يوتيوب">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-      </a>
-    </nav>
-    <p class="copy mono">© <span id="year">2026</span> سوشل لاب. جميع الحقوق محفوظة.</p>
+    <div class="footer-bottom">
+      <p class="copy mono">© <span data-year>2026</span> سوشل لاب. جميع الحقوق محفوظة.</p>
+      <div class="footer-legal">
+        <a href="https://sociallab.sa/privacy">الخصوصية</a>
+        <a href="https://sociallab.sa/terms">الشروط والأحكام</a>
+        <a href="https://eauthenticate.saudibusiness.gov.sa/certificate-details/0000206830" target="_blank" rel="noopener">موثّق في المركز السعودي للأعمال</a>
+      </div>
+    </div>
   </div>
 </footer>
-
-<!-- Mobile sticky CTA -->
-<a class="sticky-cta btn btn-lime" href="#demo" id="sticky-cta" aria-hidden="true" tabindex="-1">اطلب عرضاً توضيحياً</a>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
